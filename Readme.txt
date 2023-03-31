@@ -3,7 +3,7 @@ Tên: Võ Thành Phát
 Tên project: trang web quản lý người dùng và sản phẩm
 Sơ lược về project:
 	. Công nghệ sử dụng:
-			+ FrontEnd: ReactJS
+			+ FrontEnd: ReactJS, AntDesign
 			+ BackEnd: MongoDB
 	. Các chức năng của trang web:
 			+Đăng nhập và đăng ký

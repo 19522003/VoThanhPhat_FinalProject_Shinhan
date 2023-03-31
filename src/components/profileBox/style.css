@@ -1,0 +1,14 @@
+.profileBox {
+}
+
+.profileBox h5 {
+  font-size: 14px;
+}
+
+.profileBox p {
+  padding: 10px 0;
+}
+
+.profileBox p span {
+  opacity: 0.8;
+}

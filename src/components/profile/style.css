@@ -1,0 +1,22 @@
+.boxInfo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nameInfo {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.nameInfo_role {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.infoContain {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 20px 27px rgb(0 0 0/5%);
+}

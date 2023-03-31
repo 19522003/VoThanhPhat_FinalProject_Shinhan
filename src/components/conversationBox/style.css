@@ -1,0 +1,30 @@
+.conversations_user {
+  padding: 10px 0;
+}
+
+.user_box {
+  margin-left: 4px;
+}
+
+.user_box p {
+  opacity: 0.8;
+}
+
+.conversations_user button {
+  border: none;
+  background: none;
+  color: #40a9ff;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.user_box_name {
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.conversations_user button:hover {
+  color: #b1dcff;
+}

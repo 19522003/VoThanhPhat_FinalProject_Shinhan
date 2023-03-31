@@ -1,19 +1,22 @@
 import { SearchOutlined } from "@ant-design/icons";
-import { Button, Input, Space, Table, Image } from "antd";
+import { Button, Image, Input, Space, Table } from "antd";
 import { useEffect, useRef, useState } from "react";
-import ProductModal from "../productModal/ProductModal";
 import Highlighter from "react-highlight-words";
 import productApi from "../../api/productApi";
+import ProductModal from "../productModal/ProductModal";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
   const [listProduct, setListProduct] = useState([]);
+  const [spinner, setSpinner] = useState(false);
   useEffect(() => {
+    setSpinner(true);
     const getListProduct = async () => {
-      const newListProduct = await productApi
-        .getAll()
-        .then((product) => product.data);
+      const newListProduct = await productApi.getAll().then((product) => {
+        setSpinner(false);
+        return product.data;
+      });
       setListProduct(newListProduct);
       console.log(newListProduct);
     };
@@ -188,6 +191,6 @@ const App = () => {
       ),
     },
   ];
-  return <Table columns={columns} dataSource={data} />;
+  return <Table loading={spinner} columns={columns} dataSource={data} />;
 };
 export default App;
